@@ -15,8 +15,8 @@ fetch("events.json")
 // fetch("input.json")
 // .then(response => response.json())
 // .then(json => {
-//     json.books.forEach(function({ bh, img, bs, bn, bd, ps}) {
-//         createBooksLibrary(books, bh, img, bs, bn, bd, ps);
+//     json.books.forEach(function({ bh, img, bs, bn, bd }) {
+//         createBooksLibrary(books, bh, img, bs, bn, bd);
 //     });
 // }
 // );
@@ -56,9 +56,9 @@ function createBooksLibrary(parent, bh, img, bs, bn, bd) {
     bookDescription.appendChild(bookTextDescription);
     bookTextDescription.textContent = bd;
 
-//     const bookTextDop = document.createElement('p');
-//     bookDescription.appendChild(bookTextDop);
-//     bookTextDescription.textContent = ps;
+    // const bookTextDop = document.createElement('p');
+    // bookDescription.appendChild(bookTextDop);
+    // bookTextDescription.textContent = ps;
 }
 
 
