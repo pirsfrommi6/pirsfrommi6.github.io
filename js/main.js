@@ -6,8 +6,8 @@ const articles = document.getElementById('articles');
 fetch("events.json")
 .then(response => response.json())
 .then(json => {
-    json.events.forEach(function({ bh, img, bs, bn, bd, ps }) {
-        createBooksLibrary(books, bh, img, bs, bn, bd, ps);
+    json.events.forEach(function({ bh, img, bs, bn, bd }) {
+        createBooksLibrary(books, bh, img, bs, bn, bd);
     });
 }
 );
@@ -21,7 +21,7 @@ fetch("events.json")
 // }
 // );
 
-function createBooksLibrary(parent, bh, img, bs, bn, bd, ps) {
+function createBooksLibrary(parent, bh, img, bs, bn, bd) {
     const bookRow = document.createElement('div');
     parent.appendChild(bookRow);
     bookRow.classList.add('book-row');
@@ -56,9 +56,9 @@ function createBooksLibrary(parent, bh, img, bs, bn, bd, ps) {
     bookDescription.appendChild(bookTextDescription);
     bookTextDescription.textContent = bd;
 
-    const bookTextDop = document.createElement('p');
-    bookDescription.appendChild(bookTextDop);
-    bookTextDescription.textContent = ps;
+//     const bookTextDop = document.createElement('p');
+//     bookDescription.appendChild(bookTextDop);
+//     bookTextDescription.textContent = ps;
 }
 
 
