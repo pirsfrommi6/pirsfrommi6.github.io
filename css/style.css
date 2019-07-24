@@ -132,14 +132,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100px;
+    width: 180px;
     margin-top: 12px;
 }
 
 .book-cover-icon {
     background:url('../img/books/book0.png');
     width: 80px;
-    height: 120px;
+    height: 240px;
     background-size: cover;
 }
 
