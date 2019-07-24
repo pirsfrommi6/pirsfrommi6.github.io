@@ -3,23 +3,23 @@ const books = document.getElementById('library');
 const articles = document.getElementById('articles');
 
 
-// fetch("events.json")
-// .then(response => response.json())
-// .then(json => {
-//     json.books.forEach(function({ bh, img, bs, bn, bd }) {
-//         createBooksLibrary(books, bh, img, bs, bn, bd);
-//     });
-// }
-// );
-
-fetch("input.json")
+fetch("events.json")
 .then(response => response.json())
 .then(json => {
-    json.books.forEach(function({ bh, img, bs, bn, bd, ps}) {
-        createBooksLibrary(books, bh, img, bs, bn, bd, ps);
+    json.events.forEach(function({ bh, img, bs, bn, bd }) {
+        createBooksLibrary(books, bh, img, bs, bn, bd);
     });
 }
 );
+
+// fetch("input.json")
+// .then(response => response.json())
+// .then(json => {
+//     json.books.forEach(function({ bh, img, bs, bn, bd, ps}) {
+//         createBooksLibrary(books, bh, img, bs, bn, bd, ps);
+//     });
+// }
+// );
 
 function createBooksLibrary(parent, bh, img, bs, bn, bd, ps) {
     const bookRow = document.createElement('div');
