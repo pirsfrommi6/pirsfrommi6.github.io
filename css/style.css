@@ -172,6 +172,10 @@
     margin-top: 12px;
 }
 
+.book-cover p{
+    font-size: 1.2em;
+}
+
 .book-cover-icon {
     background:url('../img/books/book0.png') no-repeat;
     width: 240px;
@@ -186,7 +190,7 @@
     flex-basis: 300px;
     margin-left: 12px;
     margin-right: 12px;
-    font-size: 1.3em;
+    font-size: 1.2em;
     flex-grow: 1;
 }
 
