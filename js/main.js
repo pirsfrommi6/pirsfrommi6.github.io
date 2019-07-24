@@ -6,8 +6,8 @@ const articles = document.getElementById('articles');
 fetch("events.json")
 .then(response => response.json())
 .then(json => {
-    json.events.forEach(function({ bh, img, bs, bn, bd }) {
-        createBooksLibrary(books, bh, img, bs, bn, bd);
+    json.events.forEach(function({ bh, img, bs, bn, bd, ps }) {
+        createBooksLibrary(books, bh, img, bs, bn, bd, ps);
     });
 }
 );
