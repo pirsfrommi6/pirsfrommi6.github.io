@@ -15,13 +15,13 @@ const articles = document.getElementById('articles');
 fetch("input.json")
 .then(response => response.json())
 .then(json => {
-    json.books.forEach(function({ bh, img, bs, bn, bd }) {
-        createBooksLibrary(books, bh, img, bs, bn, bd);
+    json.books.forEach(function({ bh, img, bs, bn, bd, ps}) {
+        createBooksLibrary(books, bh, img, bs, bn, bd, ps);
     });
 }
 );
 
-function createBooksLibrary(parent, bh, img, bs, bn, bd) {
+function createBooksLibrary(parent, bh, img, bs, bn, bd, ps) {
     const bookRow = document.createElement('div');
     parent.appendChild(bookRow);
     bookRow.classList.add('book-row');
